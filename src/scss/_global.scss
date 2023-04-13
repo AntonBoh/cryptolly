@@ -1,0 +1,72 @@
+// Container
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
+
+  @media (max-width: $breakpoint1450) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    max-width: 740px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    max-width: none;
+  }
+}
+
+// Body & Locked
+body {
+  font-family: $fontMain;
+  background: $background;
+  &.locked {
+    overflow: hidden;
+  }
+  // Dark mode styles
+  &.dark {
+    background: #242424;
+  }
+}
+
+//Button
+.button {
+  font-family: $fontMain;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: $white;
+  padding: 11px 23px;
+  background: $royalblue;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: transparent;
+    border: 1px solid $white;
+  }
+  &--signin {
+    border: 1px solid $white;
+    border-radius: 100px;
+    padding: 12px 24px;
+    background: transparent;
+  }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
