@@ -1,1 +1,76 @@
-//button
+.getstarted {
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 640px;
+  }
+  &__title {
+    font-size: 61px;
+    margin-bottom: 24px;
+    line-height: 67px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 520px;
+    margin-bottom: 48px;
+  }
+  &__button {
+    padding: 18px 45px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  &__image {
+    position: absolute;
+    left: 50%;
+    top: 71px;
+    user-select: none;
+  }
+}
+
+.getstarted {
+  &__swiper {
+  }
+}
+.crypto {
+  &__slide {
+    width: 346px;
+    height: 178px;
+    background: rgba(47, 50, 65, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+  }
+
+  &__slide-top {
+  }
+
+  &__img {
+  }
+
+  &__chart {
+  }
+
+  &__slide-percent {
+  }
+
+  &__slide-name {
+  }
+
+  &__slide-bottom {
+  }
+}
+.arrow-up {
+}
+.persents {
+}
+.text {
+}
+.price {
+}
+.name {
+}
+.swiper-pagination {
+}

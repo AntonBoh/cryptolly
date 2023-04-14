@@ -2,7 +2,7 @@
 
 .header {
   margin-top: 25px;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   &.fixed {
     position: fixed;
     left: 0;
@@ -10,23 +10,25 @@
     width: 100%;
     z-index: 2;
   }
+  .logo {
+    z-index: 3;
+    user-select: none;
+    flex: 0 0 299px;
+    a {
+      color: white;
+    }
+    @media (max-width: $breakpoint1170) {
+      flex: 0 0 200px;
+    }
+  }
 }
 .navbar {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 20px 0;
 
   @media (max-width: $burgerBreakpoint) {
     justify-content: space-between;
-  }
-}
-
-.logo {
-  z-index: 3;
-  user-select: none;
-  flex: 0 0 299px;
-  a {
-    color: white;
   }
 }
 
@@ -53,6 +55,9 @@
     &-btns {
       gap: 16px;
       margin-left: 17px;
+      @media (max-width: $breakpoint1170) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -107,6 +112,10 @@
       z-index: 2;
       animation: fade 0.1s linear;
     }
+  }
+
+  @media (max-width: $breakpoint1170) {
+    gap: 38px;
   }
 }
 
