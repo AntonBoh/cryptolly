@@ -313,6 +313,29 @@ body.dark {
   color: #e5e6ed;
 }
 
+.swiper-pagination {
+  margin-top: 25px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background: #34384c !important;
+  border-radius: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 27px !important;
+  height: 8px !important;
+  background: -o-linear-gradient(184.44deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%) !important;
+  background: linear-gradient(265.56deg, #246cf9 -0.27%, #1e68f6 -0.26%, #0047d0 98.59%) !important;
+  border-radius: 20px !important;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -469,6 +492,16 @@ body.dark {
   max-width: 640px;
 }
 
+.getstarted__item::after {
+  content: "AAAAAAAAAAAAAAAAAAAAAAA";
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  background: url(../img/DecorativeLine.svg);
+  width: 1000px;
+  height: auto;
+}
+
 .getstarted__title {
   font-size: 61px;
   margin-bottom: 24px;
@@ -498,13 +531,96 @@ body.dark {
           user-select: none;
 }
 
+.getstarted__swiper {
+  margin-top: 95px;
+}
+
+.crypto__img {
+  width: 44px;
+  height: 44px;
+}
+
 .crypto__slide {
-  width: 346px;
-  height: 178px;
+  width: 322px !important;
   background: rgba(47, 50, 65, 0.5);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: 8px;
+  padding: 24px;
+}
+
+.crypto__slide-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.crypto__slide-percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 4px;
+}
+
+.crypto__slide-percent .persents {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.crypto__slide-percent .persents--green {
+  color: #11cabe;
+}
+
+.crypto__slide-percent .persents--red {
+  color: #cc2229;
+}
+
+.crypto__slide-name {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a5adcf;
+  margin-bottom: 11px;
+}
+
+.crypto__slide-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.crypto__slide-bottom .price {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.crypto__slide-bottom .name {
+  color: #5d6588;
 }
 
 /**

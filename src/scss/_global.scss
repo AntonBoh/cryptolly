@@ -67,7 +67,6 @@ body {
 //Sections
 .section {
   &__getstarted {
-    // height: 100vh;
     margin-bottom: 120px;
   }
 }
@@ -88,6 +87,32 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: $base-gray-20;
+}
+
+//Swiper
+
+.swiper-pagination {
+  margin-top: 25px;
+}
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background: #34384c !important;
+  border-radius: 20px !important;
+}
+.swiper-pagination-bullet-active {
+  width: 27px !important;
+  height: 8px !important;
+  background: linear-gradient(
+    265.56deg,
+    #246cf9 -0.27%,
+    #1e68f6 -0.26%,
+    #0047d0 98.59%
+  ) !important;
+  border-radius: 20px !important;
 }
 
 // Animations

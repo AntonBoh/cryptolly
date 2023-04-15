@@ -71,13 +71,19 @@ burgerMenu();
 //   },
 // }
 // });
-var swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper", {
   slidesPerView: 5,
   spaceBetween: 30,
   centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 4500,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 1,
   },
 });
 

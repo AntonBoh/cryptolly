@@ -5,6 +5,15 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 640px;
+    &::after {
+      content: "AAAAAAAAAAAAAAAAAAAAAAA";
+      position: absolute;
+      top: 0;
+      z-index: 99;
+      background: url(../img/DecorativeLine.svg);
+      width: 1000px;
+      height: auto;
+    }
   }
   &__title {
     font-size: 61px;
@@ -29,48 +38,72 @@
     top: 71px;
     user-select: none;
   }
-}
-
-.getstarted {
   &__swiper {
+    margin-top: 95px;
   }
 }
+
 .crypto {
+  &__img {
+    width: 44px;
+    height: 44px;
+  }
   &__slide {
-    width: 346px;
-    height: 178px;
+    width: 322px !important;
     background: rgba(47, 50, 65, 0.5);
     backdrop-filter: blur(2px);
     border-radius: 8px;
+    padding: 24px;
   }
 
   &__slide-top {
-  }
-
-  &__img {
-  }
-
-  &__chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__slide-percent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    .persents {
+      font-family: "Graphik";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      &--green {
+        color: $accent-green;
+      }
+      &--red {
+        color: $red;
+      }
+    }
   }
 
   &__slide-name {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color: $base-gray-40;
+    margin-bottom: 11px;
   }
 
   &__slide-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .price {
+      font-family: "Graphik";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 27px;
+      color: $white;
+    }
+    .name {
+      color: $base-gray-60;
+    }
   }
-}
-.arrow-up {
-}
-.persents {
-}
-.text {
-}
-.price {
-}
-.name {
-}
-.swiper-pagination {
 }
