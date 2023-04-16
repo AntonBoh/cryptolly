@@ -26,7 +26,7 @@
 body {
   font-family: $fontMain;
   background: $background;
-  overflow: hidden;
+  overflow-x: hidden;
   &.locked {
     overflow: hidden;
   }
@@ -67,6 +67,9 @@ body {
 //Sections
 .section {
   &__getstarted {
+    margin-bottom: 120px;
+  }
+  &__features {
     margin-bottom: 120px;
   }
 }

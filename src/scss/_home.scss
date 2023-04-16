@@ -1,3 +1,5 @@
+//SECTION GETSTARTED
+
 .getstarted {
   &__item {
     position: relative;
@@ -5,15 +7,6 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 640px;
-    &::after {
-      content: "AAAAAAAAAAAAAAAAAAAAAAA";
-      position: absolute;
-      top: 0;
-      z-index: 99;
-      background: url(../img/DecorativeLine.svg);
-      width: 1000px;
-      height: auto;
-    }
   }
   &__title {
     font-size: 61px;
@@ -105,5 +98,89 @@
     .name {
       color: $base-gray-60;
     }
+  }
+}
+
+// SECTION FEATURES
+
+.features {
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 68px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+
+    // display: flex;
+    // grid-template-columns: 1fr 1fr;
+    // gap: 24px;
+    // align-items: center;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // max-height: 685px;
+    // justify-content: center;
+  }
+
+  &__card {
+    width: 285px;
+    padding: 40px 28px;
+    background: rgba(47, 50, 65, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:last-child {
+      margin-top: 100px;
+    }
+  }
+
+  &__info {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__btn {
+  }
+}
+.card {
+  &__inner {
+  }
+
+  &__icon {
+    margin-bottom: 40px;
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+    background: $base-gray-80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: $white;
+  }
+
+  &__info {
+    color: $base-gray-40;
+    text-align: center;
   }
 }
