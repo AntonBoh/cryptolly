@@ -106,24 +106,15 @@
 .features {
   &__items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 68px;
+    grid-template-columns: 285px 285px 448px;
+    align-items: center;
+    gap: 24px;
   }
 
   &__cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 24px;
     align-items: center;
-
-    // display: flex;
-    // grid-template-columns: 1fr 1fr;
-    // gap: 24px;
-    // align-items: center;
-    // flex-direction: column;
-    // flex-wrap: wrap;
-    // max-height: 685px;
-    // justify-content: center;
   }
 
   &__card {
@@ -137,27 +128,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &:last-child {
-      margin-top: 100px;
+    &--center {
+      align-self: center;
     }
   }
 
   &__info {
+    margin-left: 44px;
   }
 
   &__title {
+    margin-bottom: 24px;
   }
 
   &__text {
+    margin-bottom: 32px;
   }
 
   &__btn {
+    padding: 16px 54px;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 .card {
-  &__inner {
-  }
-
   &__icon {
     margin-bottom: 40px;
     width: 91px;
@@ -167,8 +161,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    img {
-    }
   }
 
   &__title {
@@ -182,5 +174,69 @@
   &__info {
     color: $base-gray-40;
     text-align: center;
+  }
+}
+
+//SECTION EXCHANGE
+
+.exchange {
+  display: grid;
+  grid-template-columns: 570px 447px;
+  justify-content: space-between;
+  &__info {
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__scheme {
+  }
+
+  &__functions {
+    width: 447px;
+    height: 480px;
+    background: rgba(47, 50, 65, 0.5);
+    backdrop-filter: blur(6.5px);
+    border-radius: 20px;
+  }
+}
+.scheme {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px;
+    &:nth-child(1) {
+      margin-left: 38px;
+    }
+    &:nth-child(2) {
+      margin-left: 108px;
+    }
+    &:nth-child(3) {
+      margin-left: 192px;
+    }
+  }
+
+  &__icon {
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+    background: rgba(47, 50, 65, 0.5);
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__descr {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: $white;
   }
 }
