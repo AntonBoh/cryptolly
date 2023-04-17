@@ -296,6 +296,14 @@ body.dark {
   margin-bottom: 120px;
 }
 
+.section__choose-us {
+  margin-bottom: 160px;
+}
+
+.section__media {
+  margin-bottom: 100px;
+}
+
 .title {
   font-family: "Sofia Pro";
   font-style: normal;
@@ -360,6 +368,7 @@ body.dark {
 .header {
   margin-top: 25px;
   margin-bottom: 100px;
+  z-index: 999;
 }
 
 .header.fixed {
@@ -616,7 +625,7 @@ body.dark {
 
 .features__items {
   display: grid;
-  grid-template-columns: 285px 285px 448px;
+  grid-template-columns: 285px 285px 455px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -778,6 +787,95 @@ body.dark {
   font-size: 25px;
   line-height: 30px;
   color: #fff;
+}
+
+.choose-us {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.choose-us__image {
+  position: absolute;
+  top: 50px;
+  left: -170px;
+}
+
+.choose-us__items {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.choose-us__title {
+  margin-bottom: 24px;
+}
+
+.choose-us__text {
+  margin-bottom: 40px;
+}
+
+.choose-us__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.choose-us__features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  width: 452px;
+}
+
+.features-item__img {
+  width: 111px;
+  height: 111px;
+  background: rgba(47, 50, 65, 0.5);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.features-item__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.features-item__descr {
+  color: #a5adcf;
+}
+
+.media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /**
