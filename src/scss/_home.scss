@@ -385,3 +385,44 @@
     line-height: 18px;
   }
 }
+
+//SECTION REGISTRATION
+
+.registration {
+  text-align: center;
+  max-width: 830px;
+  margin: 0 auto;
+  &__subtitle {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    position: relative;
+    width: 462px;
+    margin: 0 auto;
+  }
+
+  &__input {
+    padding: 25px 168px 25px 32px;
+    background: rgba(47, 50, 65, 0.5);
+    border: 1px solid $base-gray-80;
+    border-radius: 100px;
+    color: $base-gray-60;
+    width: 100%;
+    border: none;
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    padding: 16px 32px;
+    right: 8px;
+    top: 5px;
+  }
+}

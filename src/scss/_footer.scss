@@ -1,4 +1,34 @@
 // Footer
-footer {
-    display: block;
+.footer {
+  &__privacy {
+    margin-bottom: 32px;
+    padding-top: 31px;
+    border-top: 1px solid $base-gray-80;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__rights {
+    color: $base-gray-60;
+  }
+
+  &__policy-term {
+    display: flex;
+    gap: 20px;
+    span {
+      height: 24px;
+      width: 1px;
+      background: $base-gray-80;
+    }
+  }
+
+  &__term-service {
+    color: $base-gray-60;
+  }
+
+  &__privacy-policy {
+    color: $base-gray-60;
+  }
 }

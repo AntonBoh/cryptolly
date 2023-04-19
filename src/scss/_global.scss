@@ -86,7 +86,11 @@ body {
     margin-bottom: 100px;
   }
 }
-
+.article {
+  &__registration {
+    margin-bottom: 135px;
+  }
+}
 //Title / text
 .title {
   font-family: "Sofia Pro";
