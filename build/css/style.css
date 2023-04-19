@@ -308,6 +308,10 @@ body.dark {
   margin-bottom: 100px;
 }
 
+.article__registration {
+  margin-bottom: 135px;
+}
+
 .title {
   font-family: "Sofia Pro";
   font-style: normal;
@@ -941,6 +945,86 @@ body.dark {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
+}
+
+.registration {
+  text-align: center;
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+.registration__subtitle {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.registration__title {
+  margin-bottom: 40px;
+}
+
+.registration__form {
+  position: relative;
+  width: 462px;
+  margin: 0 auto;
+}
+
+.registration__input {
+  padding: 25px 168px 25px 32px;
+  background: rgba(47, 50, 65, 0.5);
+  border: 1px solid #34384c;
+  border-radius: 100px;
+  color: #5d6588;
+  width: 100%;
+  border: none;
+}
+
+.registration__btn {
+  cursor: pointer;
+  position: absolute;
+  padding: 16px 32px;
+  right: 8px;
+  top: 5px;
+}
+
+.footer__privacy {
+  margin-bottom: 32px;
+  padding-top: 31px;
+  border-top: 1px solid #34384c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__rights {
+  color: #5d6588;
+}
+
+.footer__policy-term {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.footer__policy-term span {
+  height: 24px;
+  width: 1px;
+  background: #34384c;
+}
+
+.footer__term-service {
+  color: #5d6588;
+}
+
+.footer__privacy-policy {
+  color: #5d6588;
 }
 
 /**
