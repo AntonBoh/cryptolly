@@ -1,10 +1,73 @@
 // Footer
 .footer {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+
+  &__contacts {
+    // flex-grow: 100px;
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+    display: flex;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+  }
+
+  &__social-link {
+  }
+
+  &__nav {
+  }
+
+  &__nav-subtitle {
+    margin-bottom: 24px;
+  }
+
+  &__nav-menu {
+    display: flex;
+    gap: 106px;
+  }
+
+  &__nav-links {
+    color: $base-gray-40;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    a {
+      transition: 0.5s color;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -3px;
+        background: #246cf9;
+        height: 1px;
+        width: 100%;
+        transform: scale(0);
+        transition: 0.5s transform;
+      }
+      &:hover {
+        color: #246cf9;
+        &:after {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
   &__privacy {
     margin-bottom: 32px;
     padding-top: 31px;
     border-top: 1px solid $base-gray-80;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,5 +93,43 @@
 
   &__privacy-policy {
     color: $base-gray-60;
+  }
+
+  &__subscribe {
+    flex-basis: 355px;
+  }
+}
+
+.subscribe {
+  &__subtitle {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    color: $base-gray-40;
+    margin-bottom: 24px;
+  }
+
+  &__form {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__input {
+    padding: 20px 99px 20px 24px;
+    background: rgba(47, 50, 65, 0.5);
+    border: 1px solid $base-gray-80;
+    border-radius: 100px;
+    color: $base-gray-60;
+    width: 100%;
+    border: none;
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    padding: 12px 24px;
+    right: 8px;
+    top: 4px;
   }
 }

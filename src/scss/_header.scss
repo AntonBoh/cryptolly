@@ -74,14 +74,11 @@
       content: "";
       left: 0;
       bottom: -3px;
-      background: #131418;
+      background: #246cf9;
       height: 1px;
       width: 100%;
       transform: scale(0);
       transition: 0.5s transform;
-
-      // Comment if you need border animation
-      display: none;
     }
     &:hover {
       color: #246cf9;
