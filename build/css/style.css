@@ -363,6 +363,19 @@ body.dark {
   border-radius: 20px !important;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number],
+input[type=number]:hover,
+input[type=number]:focus {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -756,6 +769,170 @@ body.dark {
   -webkit-backdrop-filter: blur(6.5px);
           backdrop-filter: blur(6.5px);
   border-radius: 20px;
+}
+
+.exchange__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 90px;
+  margin-top: 27px;
+  margin-bottom: 48px;
+}
+
+.exchange__buttons span {
+  height: 24px;
+  width: 1px;
+  background: #34384c;
+}
+
+.exchange__buy {
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.exchange .buy {
+  font-family: "Graphik";
+}
+
+.exchange .buy__subtitle {
+  margin-bottom: 8px;
+  margin-left: 50px;
+}
+
+.exchange .buy__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 39px;
+  margin-bottom: 25px;
+}
+
+.exchange .buy__price {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.exchange .buy__price span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #5d6588;
+}
+
+.exchange .buy__claim {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a5adcf;
+}
+
+.exchange .buy__claim span {
+  font-weight: 800;
+}
+
+.exchange__btn {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #5d6588;
+}
+
+.exchange__btn--active {
+  color: #246cf9;
+}
+
+.exchange__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.exchange__input-item {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.exchange__input {
+  background-color: transparent;
+  padding: 16px 100px 16px 1px;
+  border-bottom: 1px solid #34384c;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  width: 350px;
+}
+
+.exchange__currency {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  right: -65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  padding: 0 17px;
+}
+
+.exchange__currency ::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 0;
+  width: 1px;
+  height: 32px;
+  background: #34384c;
+}
+
+.exchange__currency-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff;
 }
 
 .scheme__item {

@@ -65,7 +65,7 @@
 
     <!-- Main Page -->
     <main>
-      <section class="section section__getstarted">
+      <!-- <section class="section section__getstarted">
         <div class="container">
           <div class="getstarted__item">
             <h1 class="title getstarted__title">
@@ -247,7 +247,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="section section__exchange">
         <div class="container">
@@ -281,12 +281,58 @@
                 </div>
               </div>
             </div>
-            <div class="exchange__functions"></div>
+            <div class="exchange__functions">
+              <div class="exchange__buttons">
+                <button class="exchange__btn exchange__btn--active">Buy</button>
+                <span></span>
+                <button class="exchange__btn exchange__btn--sell">Sell</button>
+              </div>
+              <div class="exchange__buy">
+                <h2 class="text buy__subtitle">1 BTC is roughly</h2>
+                <div class="buy__info">
+                  <p class="buy__price">53,260.20<span> USD</span></p>
+                  <p class="buy__claim">Claim <span>$10</span> in Rewards</p>
+                </div>
+                <div class="exchange__inputs">
+                  <div class="exchange__input-item">
+                    <input
+                      class="exchange__input"
+                      placeholder="USD amount"
+                      type="number"
+                    />
+                    <div class="exchange__currency">
+                      <img
+                        class="exchange__currency-icon"
+                        src="./img/crypto-icons/USD.svg"
+                        alt="USD"
+                      />
+                      <span class="exchange__currency-name">USD</span>
+                    </div>
+                  </div>
+                  <div class="exchange__input-item">
+                    <input
+                      class="exchange__input"
+                      placeholder="BTC amount"
+                      type="number"
+                    />
+                    <div class="exchange__currency">
+                      <img
+                        class="exchange__currency-icon"
+                        src="./img/crypto-icons/Bitcoin.svg"
+                        alt="USD"
+                      />
+                      <span class="exchange__currency-name">BTC</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="button exchange__buy-btn">Buy Now</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section__choose-us">
+      <!-- <section class="section section__choose-us">
         <div class="container">
           <div class="choose-us">
             <div class="choose-us__image">
@@ -344,25 +390,7 @@
       </section>
 
       <section class="section section__media">
-        <div class="container">
-          <!-- <div class="media">
-            <div class="swiper media__swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-            <div class="media__names">
-              <div class="media__name"><span>Neweeks</span></div>
-              <div class="media__name"><span>Fores</span></div>
-              <div class="media__name"><span>MetroNew</span></div>
-              <div class="media__name"><span>EuroNew</span></div>
-            </div>
-          </div> -->
-        </div>
+        <div class="container"></div>
       </section>
 
       <section class="section section__mobile-app">
@@ -429,71 +457,10 @@
             </form>
           </div>
         </div>
-      </article>
+      </article> -->
     </main>
     <!-- Footer -->
-    <footer class="footer">
-  <div class="container">
-    <div class="footer__items">
-      <div class="footer__contacts">
-        <div class="footer__logo">
-          <a href="#"
-            ><img src="../img/footer-logo.svg" alt="cryptolly-logo"
-          /></a>
-        </div>
-        <div class="footer__social">
-          <a class="footer__social-link" href="#"
-            ><img src="../img/social-icons/LinkedIn.svg" alt="LinkedIn"
-          /></a>
-          <a class="footer__social-link" href="#"
-            ><img src="../img/social-icons/facebook.svg" alt="facebook"
-          /></a>
-          <a class="footer__social-link" href="#"
-            ><img src="../img/social-icons/Instagram.svg" alt="Instagram"
-          /></a>
-        </div>
-      </div>
-      <div class="footer__nav">
-        <h3 class="footer__nav-subtitle subtitle">Quick Links.</h3>
-        <div class="footer__nav-menu">
-          <div class="footer__nav-links text">
-            <a href="#">Buy/Sell</a>
-            <a href="#">Trade Now</a>
-            <a href="#">Pricing</a>
-          </div>
-          <div class="footer__nav-links text">
-            <a href="#">Wallets</a>
-            <a href="#">Company</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__subscribe">
-        <h3 class="subscribe__subtitle subtitle">Submit for updates.</h3>
-        <p class="text subscribe__text">
-          Subscribe to get update and notify our exchange and products
-        </p>
-        <form class="subscribe__form">
-          <input
-            class="subscribe__input"
-            type="text"
-            name="email"
-            placeholder="Enter your email address"
-          />
-          <input class="button subscribe__btn" type="submit" value="Send" />
-        </form>
-      </div>
-    </div>
-    <div class="footer__privacy">
-      <p class="text footer__rights text">Cryptolly ©. All rights reserved.</p>
-      <div class="footer__policy-term">
-        <a class="footer__term-service text" href="#">Term of Service</a>
-        <span></span>
-        <a class="footer__privacy-policy text" href="#">Privacy Policy</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+    
   </body>
 
   <script src="./js/scripts.min.js"></script>
