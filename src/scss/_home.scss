@@ -204,7 +204,135 @@
     backdrop-filter: blur(6.5px);
     border-radius: 20px;
   }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 27px;
+    margin-bottom: 48px;
+    span {
+      height: 24px;
+      width: 1px;
+      background: $base-gray-80;
+    }
+  }
+
+  &__buy {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .buy {
+    font-family: "Graphik";
+    &__subtitle {
+      margin-bottom: 8px;
+      margin-left: 50px;
+    }
+    &__info {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 39px;
+      margin-bottom: 25px;
+    }
+    &__price {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 27px;
+      color: $white;
+      span {
+        font-weight: 400;
+        font-size: 18px;
+        color: $base-gray-60;
+      }
+    }
+    &__claim {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $base-gray-40;
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+
+  &__btn {
+    font-family: "Graphik";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: $base-gray-60;
+    &--active {
+      color: #246cf9;
+    }
+  }
+  &__buy-btn {
+  }
+  &__inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__input-item {
+    position: relative;
+    margin-bottom: 35px;
+  }
+
+  &__input {
+    background-color: transparent;
+    padding: 16px 100px 16px 1px;
+    border-bottom: 1px solid $base-gray-80;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $white;
+    width: 350px;
+  }
+
+  &__currency {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    right: -65px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 17px;
+    ::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      transform: translate(-50%, -50%);
+      left: 0;
+      width: 1px;
+      height: 32px;
+      background: $base-gray-80;
+    }
+  }
+
+  &__currency-icon {
+  }
+
+  &__currency-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: $white;
+  }
 }
+.arrow {
+}
+
 .scheme {
   &__item {
     display: flex;

@@ -22,7 +22,7 @@
     @@include('./html/_header.html')
     <!-- Main Page -->
     <main>
-      <section class="section section__getstarted">
+      <!-- <section class="section section__getstarted">
         <div class="container">
           <div class="getstarted__item">
             <h1 class="title getstarted__title">
@@ -204,7 +204,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="section section__exchange">
         <div class="container">
@@ -238,12 +238,58 @@
                 </div>
               </div>
             </div>
-            <div class="exchange__functions"></div>
+            <div class="exchange__functions">
+              <div class="exchange__buttons">
+                <button class="exchange__btn exchange__btn--active">Buy</button>
+                <span></span>
+                <button class="exchange__btn exchange__btn--sell">Sell</button>
+              </div>
+              <div class="exchange__buy">
+                <h2 class="text buy__subtitle">1 BTC is roughly</h2>
+                <div class="buy__info">
+                  <p class="buy__price">53,260.20<span> USD</span></p>
+                  <p class="buy__claim">Claim <span>$10</span> in Rewards</p>
+                </div>
+                <div class="exchange__inputs">
+                  <div class="exchange__input-item">
+                    <input
+                      class="exchange__input"
+                      placeholder="USD amount"
+                      type="number"
+                    />
+                    <div class="exchange__currency">
+                      <img
+                        class="exchange__currency-icon"
+                        src="./img/crypto-icons/USD.svg"
+                        alt="USD"
+                      />
+                      <span class="exchange__currency-name">USD</span>
+                    </div>
+                  </div>
+                  <div class="exchange__input-item">
+                    <input
+                      class="exchange__input"
+                      placeholder="BTC amount"
+                      type="number"
+                    />
+                    <div class="exchange__currency">
+                      <img
+                        class="exchange__currency-icon"
+                        src="./img/crypto-icons/Bitcoin.svg"
+                        alt="USD"
+                      />
+                      <span class="exchange__currency-name">BTC</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="button exchange__buy-btn">Buy Now</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section__choose-us">
+      <!-- <section class="section section__choose-us">
         <div class="container">
           <div class="choose-us">
             <div class="choose-us__image">
@@ -301,25 +347,7 @@
       </section>
 
       <section class="section section__media">
-        <div class="container">
-          <!-- <div class="media">
-            <div class="swiper media__swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-            <div class="media__names">
-              <div class="media__name"><span>Neweeks</span></div>
-              <div class="media__name"><span>Fores</span></div>
-              <div class="media__name"><span>MetroNew</span></div>
-              <div class="media__name"><span>EuroNew</span></div>
-            </div>
-          </div> -->
-        </div>
+        <div class="container"></div>
       </section>
 
       <section class="section section__mobile-app">
@@ -386,10 +414,10 @@
             </form>
           </div>
         </div>
-      </article>
+      </article> -->
     </main>
     <!-- Footer -->
-    @@include('./html/_footer.html')
+    <!-- @@include('./html/_footer.html') -->
   </body>
 
   <script src="./js/scripts.min.js"></script>
